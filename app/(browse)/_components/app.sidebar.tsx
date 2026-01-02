@@ -11,7 +11,7 @@ import React from 'react'
 function AppSidebar() {
     const pathname =usePathname()
   return (
-   <Sidebar>
+   <Sidebar variant='floating' collapsible='icon'>
       <SidebarContent>
         <SidebarGroup >
             <SidebarGroupLabel>Pages</SidebarGroupLabel>
@@ -52,7 +52,7 @@ function AppSidebar() {
         <SidebarGroup />
       </SidebarContent>
       <SidebarFooter>
-                    <SidebarMenu className="flex items-center border-t">
+                    <SidebarMenu className="flex items-center border-t group-data-[collapsible=icon]:hidden">
                         <div className="flex items-center gap-x-2 pt-2">
                             {social_items.map((item)=>(
                                 <Button variant="ghost" size="icon"  className="size-7" key={item.title} onClick={()=>{window.open(item.href,'_blank')}}>

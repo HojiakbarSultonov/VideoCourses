@@ -10,7 +10,7 @@ function Layout({ children }: LayoutProps) {
   return (
     <SidebarProvider>
       <AppSidebar/>
-    <main className='w-fit lg:mr-2'>
+    <main className='w-full lg:mr-2'>
       <AppNavbar/>
       <div className="mt-2 max-w-6xl mx-auto mb-12">
       {children}
